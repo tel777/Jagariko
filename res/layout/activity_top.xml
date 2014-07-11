@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/title_icon_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Shibuya" />
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:text="mode:"
+        android:textSize="60sp" />
+
+    <Button
+        android:id="@+id/start_id"
+        style="@style/Button"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/setting_id"
+        style="@style/Button"
+        android:text="SETTING" />
+
+    <Button
+        android:id="@+id/rank_id"
+        style="@style/Button"
+        android:text="RANKING" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- white -->
+    <color name="white">#FFFFFF</color>
+    <!-- black -->
+    <color name="black">#000000</color>
+    <!-- gray -->
+    <color name="gray">#BEBEBE</color>
+    <!-- blue -->
+    <color name="blue">#0000FF</color>
+    <!-- red -->
+    <color name="red">#FF0000</color>
+    <!-- yellow -->
+    <color name="yellow">#FFFF00</color>
+    <!-- green -->
+    <color name="green">#00FF00</color>
+    <!-- purple -->
+    <color name="purple">#9900CC</color>
+    <!-- pink -->
+    <color name="pink">#FF00FF</color>
+    <!-- orange -->
+    <color name="orange">#FF9900</color>
+    <!-- brown -->
+    <color name="brown">#CC9900</color>
+</resources>

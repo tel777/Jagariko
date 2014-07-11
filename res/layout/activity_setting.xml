@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity" >
+
+    <RadioGroup
+        android:id="@+id/mode_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_expert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expert" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/defo_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mode_group"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:id="@+id/changeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/backView"
+        android:layout_below="@+id/backView"
+        android:layout_marginTop="59dp"
+        android:text="changeView" />
+
+    <TextView
+        android:id="@+id/defoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/defo_spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="defoView" />
+
+    <TextView
+        android:id="@+id/backView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/defoView"
+        android:layout_centerVertical="true"
+        android:text="backView" />
+
+    <Spinner
+        android:id="@+id/change_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <Spinner
+        android:id="@+id/back_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/change_spinner"
+        android:layout_marginTop="18dp" />
+
+</RelativeLayout>
