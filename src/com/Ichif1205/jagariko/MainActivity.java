@@ -1,15 +1,14 @@
 package com.Ichif1205.jagariko;
 
 import android.app.Activity;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.TextView;
 
-import com.Ichif1205.jagariko.FieldSurfaceView.GameEventLiestener;
-
-public class MainActivity extends Activity implements GameEventLiestener {
-	private FieldSurfaceView mFieldSurfaceView;
+public class MainActivity extends Activity {
 	private TextView mComboView = null;
 	private int mCombo = 0;
 	private TextView mCountView = null;
@@ -19,36 +18,58 @@ public class MainActivity extends Activity implements GameEventLiestener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		Log.d("check","check1");
 		setContentView(R.layout.activity_main);
 
-		Log.d("check","check2");
+		// 初期描写
 		setView();
-		mFieldSurfaceView = (FieldSurfaceView) findViewById(R.id.FieldSurfaceView_id);
-		Log.d("check","check"+this);
-		mFieldSurfaceView.setEventListener(this);
 	}
 
-	private void setView() {
-		// TODO カウンター
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_main, menu);
+	public boolean onTouchEvent(MotionEvent event) {
+		int x=(int)event.getX();
+		int y=(int)event.getY();
 		return true;
 	}
 
-	@Override
-	public void endGame(int score, int clearflg) {
-		// TODO 自動生成されたメソッド・スタブ
+	private void setView() {
+		View oval1 = findViewById(R.id.oval1);
+		View oval2 = findViewById(R.id.oval2);
+		View oval3 = findViewById(R.id.oval3);
+		View oval4 = findViewById(R.id.oval4);
+		View oval5 = findViewById(R.id.oval5);
+		View oval6 = findViewById(R.id.oval6);
+		View oval7 = findViewById(R.id.oval7);
+		View oval8 = findViewById(R.id.oval8);
+		View oval9 = findViewById(R.id.oval9);
+		View oval10 = findViewById(R.id.oval10);
+		View oval11 = findViewById(R.id.oval11);
+		View oval12 = findViewById(R.id.oval12);
+		View oval13 = findViewById(R.id.oval13);
+		View oval14 = findViewById(R.id.oval14);
+		View oval15 = findViewById(R.id.oval15);
+		View oval16 = findViewById(R.id.oval16);
+		GradientDrawable ovalDrawable = (GradientDrawable) getResources()
+				.getDrawable(R.drawable.circle);
 
-	}
+		// changeColor
+		ovalDrawable.setColor(Color.GREEN);
 
-	@Override
-	public void addScore(int score) {
-		// TODO 自動生成されたメソッド・スタブ
+		// Viewに適応
+		oval1.setBackground(ovalDrawable);
+		oval2.setBackground(ovalDrawable);
+		oval3.setBackground(ovalDrawable);
+		oval4.setBackground(ovalDrawable);
+		oval5.setBackground(ovalDrawable);
+		oval6.setBackground(ovalDrawable);
+		oval7.setBackground(ovalDrawable);
+		oval8.setBackground(ovalDrawable);
+		oval9.setBackground(ovalDrawable);
+		oval10.setBackground(ovalDrawable);
+		oval11.setBackground(ovalDrawable);
+		oval12.setBackground(ovalDrawable);
+		oval13.setBackground(ovalDrawable);
+		oval14.setBackground(ovalDrawable);
+		oval15.setBackground(ovalDrawable);
+		oval16.setBackground(ovalDrawable);
 
 	}
 
