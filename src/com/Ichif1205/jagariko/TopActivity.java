@@ -14,11 +14,27 @@ public class TopActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_top);
 		ImageView image = (ImageView) findViewById(R.id.title_icon_id);
-		TextView mode = (TextView) findViewById(R.id.mode);
+		TextView title = (TextView) findViewById(R.id.title);
 
-		// Main Activity
-		Button button_start = (Button) findViewById(R.id.start_id);
-		button_start.setOnClickListener(new View.OnClickListener() {
+		// Normal Activity
+		Button normal_start = (Button) findViewById(R.id.normal_id);
+		normal_start.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Intent intent = new Intent(TopActivity.this, MainActivity.class);
+				startActivity(intent);
+			}
+		});
+		// Hard Activity
+		Button hard_start = (Button) findViewById(R.id.hard_id);
+		hard_start.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				Intent intent = new Intent(TopActivity.this, MainActivity.class);
+				startActivity(intent);
+			}
+		});
+		// time Activity
+		Button time_start = (Button) findViewById(R.id.time_id);
+		time_start.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				Intent intent = new Intent(TopActivity.this, MainActivity.class);
 				startActivity(intent);

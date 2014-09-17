@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener {
 	private TextView mComboView = null;
 	private int mCombo = 0;
 	private TextView mCountView = null;
@@ -25,9 +27,15 @@ public class MainActivity extends Activity {
 	}
 
 	public boolean onTouchEvent(MotionEvent event) {
-		int x=(int)event.getX();
-		int y=(int)event.getY();
+		int x = (int) event.getX();
+		int y = (int) event.getY();
 		return true;
+	}
+
+	@Override
+	public void onClick(View v) {
+		v.setBackgroundColor(Color.RED);
+		Log.d("bug", "aiueo");
 	}
 
 	private void setView() {
