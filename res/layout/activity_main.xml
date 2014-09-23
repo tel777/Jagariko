@@ -7,154 +7,179 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:orientation="horizontal" >
 
-        <TextView
-            android:id="@+id/countView_id"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="0"
-            android:textColor="#00ff00" />
-
-        <TextView
-            android:id="@+id/comboView_id"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="0"
-            android:textColor="#00ff00" />
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/timeView_id"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            <TextView
+                android:id="@+id/count_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="count"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/countView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="right"
-            android:text="0"
-            android:textColor="#00ff00" />
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/time_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="time"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/timeView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+        </LinearLayout>
     </LinearLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp" >
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/target1"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target2"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target3"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target4"
+                style="@style/numbersStyle" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/target5"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target6"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target7"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target8"
+                style="@style/numbersStyle" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/target9"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target10"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target11"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target12"
+                style="@style/numbersStyle" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/target13"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target14"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target15"
+                style="@style/numbersStyle" />
+
+            <Button
+                android:id="@+id/target16"
+                style="@style/numbersStyle" />
+        </TableRow>
+    </TableLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:orientation="horizontal" >
 
-        <View
-            android:id="@+id/oval1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:indeterminate="false" />
 
-        <View
-            android:id="@+id/oval2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
 
-        <View
-            android:id="@+id/oval3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
+            <TextView
+                android:id="@+id/combo_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="combo"
+                android:textColor="#000000"
+                android:textSize="20sp" />
 
-        <View
-            android:id="@+id/oval4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
+            <TextView
+                android:id="@+id/comboView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal" >
-
-        <View
-            android:id="@+id/oval5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval6"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval7"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval8"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal" >
-
-        <View
-            android:id="@+id/oval9"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval10"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval11"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval12"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal" >
-
-        <View
-            android:id="@+id/oval13"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval14"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval15"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-
-        <View
-            android:id="@+id/oval16"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1" />
-    </LinearLayout>
-
 
 </LinearLayout>

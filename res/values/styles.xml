@@ -44,6 +44,16 @@
         <item name="android:textSize">22sp</item>
     </style>
 
+    <style name="numbersStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">#2ECC71</item>
+    </style>
+
     <style name="TabStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">38dp</item>
