@@ -50,32 +50,23 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int average_text=0x7f080032;
-        public static final int backView=0x7f080025;
-        public static final int back_spinner=0x7f080028;
-        public static final int changeView=0x7f080024;
-        public static final int change_ranks=0x7f080015;
-        public static final int change_spinner=0x7f080027;
+        public static final int average_text=0x7f080026;
         public static final int column_header=0x7f080017;
         public static final int comboView_id=0x7f080001;
-        public static final int combo_text=0x7f080036;
+        public static final int combo_text=0x7f08002a;
         public static final int countView_id=0x7f080000;
-        public static final int count_text=0x7f080034;
-        public static final int date_text=0x7f080033;
-        public static final int defoView=0x7f080026;
-        public static final int defo_spinner=0x7f080023;
-        public static final int expert_ranks=0x7f080016;
-        public static final int hard_id=0x7f08002c;
-        public static final int header_combo=0x7f08001c;
-        public static final int header_count=0x7f080019;
-        public static final int header_date=0x7f08001d;
-        public static final int header_level=0x7f08001a;
+        public static final int count_text=0x7f080028;
+        public static final int date_text=0x7f080027;
+        public static final int hard_id=0x7f080021;
+        public static final int hard_ranks=0x7f080015;
+        public static final int header_combo=0x7f08001b;
+        public static final int header_count=0x7f08001a;
+        public static final int header_date=0x7f08001c;
         public static final int header_rank=0x7f080018;
-        public static final int header_time=0x7f08001b;
-        public static final int level_text=0x7f080035;
-        public static final int menu_settings=0x7f080038;
-        public static final int mode_group=0x7f08001f;
-        public static final int normal_id=0x7f08002b;
+        public static final int header_time=0x7f080019;
+        public static final int level_text=0x7f080029;
+        public static final int menu_settings=0x7f08002c;
+        public static final int normal_id=0x7f080020;
         public static final int normal_ranks=0x7f080014;
         public static final int oval1=0x7f080003;
         public static final int oval10=0x7f08000c;
@@ -93,28 +84,24 @@ public final class R {
         public static final int oval7=0x7f080009;
         public static final int oval8=0x7f08000a;
         public static final int oval9=0x7f08000b;
-        public static final int radiobutton_change=0x7f080021;
-        public static final int radiobutton_expert=0x7f080022;
-        public static final int radiobutton_normal=0x7f080020;
-        public static final int rank=0x7f080030;
-        public static final int rank_id=0x7f08002f;
-        public static final int rank_list=0x7f08001e;
-        public static final int score_text=0x7f080031;
-        public static final int setting_id=0x7f08002e;
+        public static final int rank=0x7f080024;
+        public static final int rank_id=0x7f080023;
+        public static final int rank_list=0x7f08001d;
+        public static final int score_text=0x7f080025;
         public static final int tab_group=0x7f080013;
         public static final int timeView_id=0x7f080002;
-        public static final int time_id=0x7f08002d;
-        public static final int time_text=0x7f080037;
-        public static final int title=0x7f08002a;
-        public static final int title_icon_id=0x7f080029;
+        public static final int time_id=0x7f080022;
+        public static final int time_ranks=0x7f080016;
+        public static final int time_text=0x7f08002b;
+        public static final int title=0x7f08001f;
+        public static final int title_icon_id=0x7f08001e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_rank=0x7f030001;
-        public static final int activity_setting=0x7f030002;
-        public static final int activity_top=0x7f030003;
-        public static final int rank_item=0x7f030004;
-        public static final int time_rank_item=0x7f030005;
+        public static final int activity_top=0x7f030002;
+        public static final int rank_item=0x7f030003;
+        public static final int time_rank_item=0x7f030004;
     }
     public static final class menu {
         public static final int activity_field_surface_view=0x7f070000;

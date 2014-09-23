@@ -47,13 +47,6 @@ public class RankActivity extends Activity {
 					((TextView) view).setText(String.valueOf(count));
 					return true;
 				}
-				// Lvをセット
-				if (columnIndex == cursor
-						.getColumnIndex(DatabaseOpenHelper.COLUMN_LEVEL)) {
-					double level = cursor.getDouble(columnIndex);
-					((TextView) view).setText(String.valueOf(level));
-					return true;
-				}
 				// comboをセット
 				if (columnIndex == cursor
 						.getColumnIndex(DatabaseOpenHelper.COLUMN_COMBO)) {
@@ -110,10 +103,10 @@ public class RankActivity extends Activity {
 		public void onCheckedChanged(RadioGroup group, int checkedId) {
 			if (mTabGroup.getCheckedRadioButtonId() == R.id.normal_ranks) {
 				mCursor = Ranks.getRanksNormalCursor(getContentResolver());
-			} else if (mTabGroup.getCheckedRadioButtonId() == R.id.change_ranks) {
-				mCursor = Ranks.getRanksChangeCursor(getContentResolver());
+			} else if (mTabGroup.getCheckedRadioButtonId() == R.id.hard_ranks) {
+				mCursor = Ranks.getRanksHardCursor(getContentResolver());
 			} else {
-				mCursor = Ranks.getRanksExpertCursor(getContentResolver());
+				mCursor = Ranks.getRanksTimeCursor(getContentResolver());
 			}
 			showListView();
 		}
@@ -128,11 +121,10 @@ public class RankActivity extends Activity {
 				R.layout.time_rank_item, mCursor, new String[] {
 						DatabaseOpenHelper.COLUMN_ID,
 						DatabaseOpenHelper.COLUMN_COUNT,
-						DatabaseOpenHelper.COLUMN_LEVEL,
 						DatabaseOpenHelper.COLUMN_COMBO,
 						DatabaseOpenHelper.COLUMN_TIME,
 						DatabaseOpenHelper.COLUMN_DATE }, new int[] {
-						R.id.rank, R.id.count_text, R.id.level_text,
+						R.id.rank, R.id.count_text,
 						R.id.combo_text, R.id.time_text, R.id.date_text }, 0);
 
 		ListView lv = (ListView) findViewById(R.id.rank_list);

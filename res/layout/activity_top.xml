@@ -54,12 +54,6 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/setting_id"
-            style="@style/Button"
-            android:layout_weight="1"
-            android:text="SETTING" />
-
-        <Button
             android:id="@+id/rank_id"
             style="@style/Button"
             android:layout_weight="1"

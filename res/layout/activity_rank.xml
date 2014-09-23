@@ -18,14 +18,14 @@
             android:text="Normal" />
 
         <RadioButton
-            android:id="@+id/change_ranks"
+            android:id="@+id/hard_ranks"
             style="@style/TabStyle"
-            android:text="Change" />
+            android:text="Hard" />
 
         <RadioButton
-            android:id="@+id/expert_ranks"
+            android:id="@+id/time_ranks"
             style="@style/TabStyle"
-            android:text="Expert" />
+            android:text="Time" />
     </RadioGroup>
 
     <LinearLayout
@@ -44,22 +44,16 @@
             android:text="Rank" />
 
         <TextView
-            android:id="@+id/header_count"
-            style="@style/RowHeader"
-            android:layout_weight="4"
-            android:text="Count" />
-
-        <TextView
-            android:id="@+id/header_level"
-            style="@style/RowHeader"
-            android:layout_weight="2"
-            android:text="Lv" />
-
-        <TextView
             android:id="@+id/header_time"
             style="@style/RowHeader"
             android:layout_weight="3"
             android:text="Time" />
+
+        <TextView
+            android:id="@+id/header_count"
+            style="@style/RowHeader"
+            android:layout_weight="4"
+            android:text="Count" />
 
         <TextView
             android:id="@+id/header_combo"

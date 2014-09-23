@@ -41,16 +41,6 @@ public class TopActivity extends Activity {
 			}
 		});
 
-		// Setting Activity
-		Button button_setting = (Button) findViewById(R.id.setting_id);
-		button_setting.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View view) {
-				Intent intent = new Intent(TopActivity.this,
-						SettingActivity.class);
-				startActivity(intent);
-			}
-		});
-
 		// Rank Activity
 		Button button_rank = (Button) findViewById(R.id.rank_id);
 		button_rank.setOnClickListener(new View.OnClickListener() {
